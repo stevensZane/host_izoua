@@ -25,9 +25,9 @@ environ.Env.read_env(env_file=str(BASE_DIR / 'izouaproject' / '.env'))
 SECRET_KEY=env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DEBUG", False) # si aucune valeur n'est spécifiée dans le fichier env, la valeur par défaut ici sera False
+DEBUG = False # si aucune valeur n'est spécifiée dans le fichier env, la valeur par défaut ici sera False
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS') # doit contenir l'url du site qui hébergera ce projet
+ALLOWED_HOSTS = ['izouapizza.com', 'www.izouapizza.com', 'izouapizza.onrender.com'] # doit contenir l'url du site qui hébergera ce projet
 
 
 # Application definition
